@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+ <head>
+    <meta charset="UTF-8">
+	<link rel="Stylesheet" href="reset.css">
+    <link rel="Stylesheet" href="retostyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,600&family=Oswald&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+ </head>
+
+ <body>
+
+    <header>
+        <div id="Titulo">
+			<h1>Trick It</h1>
+		</div>
+		<h6 class="Subtitulo">Tu encriptador de texto</h6>
+    </header>
+
+    <main>
+        <section class="Cajas">
+			<!--Caja de texto para la entrada-->
+			<textarea  type="text" placeholder="Ingrese su texto" class="Entrada" cols="40" rows="6"></textarea>
+		
+			<!--Caja de texto para la salida-->
+			<textarea  type="text" class="Salida" cols="40" rows="6" id="textosalida" placeholder="Ningun texto que mostrar"></textarea>
+		</section>
+
+		<h6 class="Instrucciones">Solo letras minúsculas y sin acentos</h6>
+
+		<div  class="bloquebotones">
+
+				<button id="boton1" onclick="btnencriptar()">Encriptar</button>
+				<button id="boton2" onclick="btndesencriptar()">Desencriptar</button>
+                <button id="boton3" onclick="btncopiar()">Copiar</button>
+				
+		</div>
+
+    </main>
+
+    <footer>
+        <p class="copyright">&copy Trick It All Rights Reserved<br>Powered by: Juan Jacobo Mora Cerecero<br>Contact: moracerecero&#64;gmail.com<br>Cd. Nezahualcóyotl, Edo. de Mex., México</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+ </body>
+
+</html>
